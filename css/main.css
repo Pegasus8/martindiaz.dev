@@ -1,0 +1,29 @@
+#title {
+    animation: fade-in 2s forwards;
+    opacity: 0;
+    font-size: 5rem;
+}
+
+.text {
+    animation: fade-in 4s forwards .5s;
+    opacity: 0;
+    font-size: 2rem;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
