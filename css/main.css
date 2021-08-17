@@ -1,36 +1,32 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Fenix&family=Open+Sans&display=swap'); */
-
 :root {
     --bg-color: #1F2937;
     --primary-color: #9CA3AF;
     --secondary-color: #6B7280;
+    --title-fz: 5rem;
+    --description-fz: 1.5rem;
 }
 
 #title {
-    animation: fade-in 2s forwards;
     opacity: 0;
-    font-size: 5rem;
+    animation: fade-in 2s forwards;
+    font-size: var(--title-fz);
     font-family: 'Fenix', serif;
     color: var(--primary-color);
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0px;
 }
 
 #description {
-    animation: fade-in 2s forwards .5s;
     opacity: 0;
-    font-size: 1.5rem;
+    animation: fade-in 2s forwards .5s;
+    font-size: var(--description-fz);
     font-family: 'Open Sans', sans-serif;
-    color: var(--secondary-color);
-    margin-top: .2rem;
-    margin-bottom: .2rem;
     font-weight: normal;
+    color: var(--secondary-color);
+    margin: .2rem 0px;
 }
 
 .social {
-    /* animation: fade-in 2s forwards .75s; */
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem;
     padding: 1rem;
 }
 
@@ -47,16 +43,22 @@
     justify-content: center;
     align-content: center;
     text-align: center;
+    padding: 1rem;
 }
 
 .container-col {
     flex-direction: column;
 }
 
-body {
+.main-container {
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+body {
     background-color: var(--bg-color);
 }
 
@@ -64,7 +66,27 @@ html {
     font-size: 16px;
 }
 
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
 @keyframes fade-in {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
+/* @font-face {
+    font-family: 'Fenix';
+    src: url('assets/fonts/Fenix-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('assets/fonts/OpenSans-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+} */
