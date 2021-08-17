@@ -1,13 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Fenix&family=Open+Sans&display=swap');
+
+:root {
+    --bg-color: #1F2937;
+    --title-color: #9CA3AF;
+    --description-color: #6B7280;
+}
+
 #title {
     animation: fade-in 2s forwards;
     opacity: 0;
     font-size: 5rem;
+    font-family: 'Fenix', serif;
+    color: var(--title-color);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-.text {
+#description {
     animation: fade-in 4s forwards .5s;
     opacity: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--description-color);
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: normal;
 }
 
 .main-container {
@@ -21,6 +40,11 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
+    background-color: var(--bg-color);
+}
+
+html {
+    font-size: 16px;
 }
 
 @keyframes fade-in {
