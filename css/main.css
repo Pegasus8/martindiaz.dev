@@ -2,8 +2,8 @@
 
 :root {
     --bg-color: #1F2937;
-    --title-color: #9CA3AF;
-    --description-color: #6B7280;
+    --primary-color: #9CA3AF;
+    --secondary-color: #6B7280;
 }
 
 #title {
@@ -11,7 +11,7 @@
     opacity: 0;
     font-size: 5rem;
     font-family: 'Fenix', serif;
-    color: var(--title-color);
+    color: var(--primary-color);
     margin-right: auto;
     margin-left: auto;
     margin-top: 0px;
@@ -19,21 +19,43 @@
 }
 
 #description {
-    animation: fade-in 4s forwards .5s;
+    animation: fade-in 2s forwards .5s;
     opacity: 0;
     font-size: 1.5rem;
     font-family: 'Open Sans', sans-serif;
-    color: var(--description-color);
+    color: var(--secondary-color);
     margin-right: auto;
     margin-left: auto;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
     font-weight: normal;
 }
 
-.main-container {
+.social {
+    /* animation: fade-in 2s forwards .75s; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.icon {
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    animation: fade-in 2s forwards .75s;
+    color: var(--secondary-color);
+    background-color: transparent;
+    border-width: 0px;
+}
+
+.container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-content: center;
+}
+
+.container-col {
+    flex-direction: column;
 }
 
 body {
